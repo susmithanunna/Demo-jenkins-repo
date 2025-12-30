@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment{
-        env1:"env1 value"
+        env1="env1 value"
     }
     parameters {
         choice(
