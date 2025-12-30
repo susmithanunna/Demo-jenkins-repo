@@ -47,5 +47,22 @@ pipeline {
                 }
             }
         }
+        post{
+            sucess{
+                echo "✅ job is success"
+            }
+            failure{
+                echo "❌ job is failed"
+            }
+            aborted{
+                echo "🛑 job is aborted"
+            }
+            always{
+                echo "📌 job finished"
+            }
+            cleanup{
+                echo "🧹 cleaning "
+            }
+        }
     }
 }
