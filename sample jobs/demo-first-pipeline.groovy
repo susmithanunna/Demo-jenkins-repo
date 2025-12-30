@@ -19,12 +19,14 @@ pipeline {
         stage('first stage') {
             steps {
                 echo "Text in first stage"
+                echo "print the enviromnet that is selected ${env.Environment}"
                 echo "Print env variable ${env.env1}"
             }
         }
         stage('Second stage') {
             steps {
                 echo 'Text in second stage'
+                echo "print the Tags that is selected ${env.Tags}"
             }
         }
     }
