@@ -1,0 +1,1 @@
+Sample demo repo to know how the script in repo is linked to script in configuration of a pipeline
