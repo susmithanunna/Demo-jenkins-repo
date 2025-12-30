@@ -29,5 +29,25 @@ pipeline {
                 echo "print the Tags that is selected ${env.Tags}"
             }
         }
+        stage("Parallel Stage"){
+            parallel{
+                stage('parallel stage1'){
+                    steps{
+                        echo "This parallel stage one step1"
+                        echo "This parallel stage one step2"
+                        echo "This parallel stage one step3"
+                        echo "This parallel stage one step4"
+                        echo "This parallel stage one step5"
+                        echo "This parallel stage one step6"
+                    }
+                }
+                stage('parallel stage2'){
+                    steps{
+                        echo "This parallel stage two step1"
+                        echo "This parallel stage two step2 "
+                    }
+                }
+            }
+        }
     }
 }
