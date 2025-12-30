@@ -49,7 +49,8 @@ pipeline {
                 }
             }
         }
-        post{
+    }
+     post{
             sucess{
                 echo "✅ job is success"
             }
@@ -66,5 +67,4 @@ pipeline {
                 echo "🧹 cleaning "
             }
         }
-    }
 }
